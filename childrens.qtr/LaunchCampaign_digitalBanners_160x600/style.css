@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+}
+
+#container {
+  position: absolute;
+  width: 160px;
+  height: 600px;
+  overflow: hidden;
+  border: 1px solid white;
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+#logo-SLV, #logo-CV, #text-1, #text-2, #text-3, #text-4 {
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+#logo-SLV {
+  top: 24px;
+  width: 126px;
+}
+
+#logo-CV {
+  top: 535px;
+  width: 92px;
+}
+
+#text-1, #text-2, #text-3 {
+  height: 38px;
+  width: 136px;
+}
+
+#text-1 {
+  background-image: url('assets/text-1.png');
+  top: 179px;
+}
+
+#text-2 {
+  background-image: url('assets/text-2.png');
+  top: 319px;
+}
+
+#text-3 {
+  background-image: url('assets/text-3.png');
+  top: 459px;
+}
+
+#text-4 {
+  /*z-index: 10000;*/
+  background-image: url('assets/text-4.png');
+  width: 150px;
+  height: 186px;
+  top: 115px;
+}
+
+.lockup {
+  opacity: 1;
+}
+
+#justadd, #c, #u, #r, #i, #o, #s, #i2, #t, #y {
+  position: absolute;
+  left: 43px;
+  top: 278px;
+  opacity: 0;
+}
+
+#lockup_o {
+  position: relative;
+  width: 956px;
+  height: 956px;
+  left: -399px;
+  top: -208px;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 1;
+}
+
+#image {
+  position: absolute;
+  background-image: url('assets/image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 743px;
+  height: 743px;
+  left: 140px;
+  top: 140px;
+}
+
+#o {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 956px;
+  opacity: 0;
+}
+
+#u {
+  left: 42px;
+}
+
+#black-fade {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  left: 0;
+  top: 0;
+  background-color: black;
+  opacity: 0;
+}
+/*
+#text-4 {
+  position: absolute;
+  background-image: url('assets/text-4.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 138px;
+  height: 60px;
+  left: 10px;
+  top: 220px;
+  opacity: 1;
+}
+*/
+button {
+  position: absolute;
+  height: 42px;
+  width: 144px;
+  left: 7px;
+  top: 320px;
+  background-color: black;
+  border: 2px solid: white;
+  border-radius: 6px;
+  padding-top: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#trace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Velvet Iron Ashes - 728x90</title>
+		<meta name="Launch - 728x90" content="width=728,height=90">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+	</head>
+	<body>
+
+		<div id="container" href="https://www.slv.vic.gov.au/explore" onclick="clickthrough();">
+
+			<!-- Frame 01 -->
+			<img id="logo-SLV" src="./assets/logo-slv.svg">
+			<div id="text-1"></div>
+			<div id="text-2"></div>
+			<div id="text-3"></div>
+
+			<!-- Frame 02 -->
+			<img class="lockup" id="justadd" src="assets/lockup_justadd.svg">
+			<img class="lockup" id="c" src="assets/lockup_c.svg">
+			<img class="lockup" id="u" src="assets/lockup_u.svg">
+			<img class="lockup" id="r" src="assets/lockup_r.svg">
+			<img class="lockup" id="i" src="assets/lockup_i.svg">
+
+			<img class="lockup" id="s" src="assets/lockup_s.svg">
+			<img class="lockup" id="i2" src="assets/lockup_i.svg">
+			<img class="lockup" id="t" src="assets/lockup_t.svg">
+			<img class="lockup" id="y" src="assets/lockup_y.svg">
+
+			<div class="lockup" id="lockup_o">
+				<div class="lockup" id="image"></div>
+				<img class="lockup" id="o" src="assets/lockup_o.svg">
+			</div>
+
+			<div id="black-fade"></div>
+
+			<!-- <img id="trace" src="assets/trace.png"> -->
+
+			<!-- Frame 03 -->
+			<img id="logo-CV" src="assets/logo-CV.svg">
+			<button><img src="assets/text-cta.png" width="137"></button>
+			<div id="text-4"></div>
+
+		</div>
+	</a>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+	<script type="text/javascript">
+
+		function addEventListeners() {
+			document.getElementById("container").addEventListener("click", clickthrough);
+		}
+
+		function clickthrough() {
+			EB.clickthrough();
+		}(function () {
+
+			var tl = new TimelineMax({repeat: 2, repeatDelay: 1, force3D: true});
+
+			// Frame 01
+			tl.to('#black-fade', 0.1, {opacity: 0}).from('#text-1', 1, {
+				opacity: 0,
+				ease: Power2.easeOut
+			}).to('#text-1', 1, {
+				opacity: 0,
+				ease: Power2.easeOut,
+				delay: 0.2
+			}, "f1_out").from('#text-2', 1, {
+				opacity: 0,
+				ease: Power2.easeOut,
+				delay: -0.3
+			}).to('#text-2', 1, {
+				opacity: 0,
+				ease: Power2.easeOut,
+				delay: 0.2
+			}, "f2_out").from('#text-3', 1, {
+				opacity: 0,
+				ease: Power2.easeOut,
+				delay: -0.3
+			}).to('#text-3', 1, {
+				opacity: 0,
+				ease: Power2.easeOut,
+				delay: 0.2
+			}, "f3_out")
+
+			// Frame 02
+				.from('#image', 1, {
+				opacity: 0,
+				ease: Power2.easeOut,
+				delay: -0.5
+			}).to('#logo-SLV', 2, {
+				opacity: 0,
+				ease: Power2.easeOut,
+				delay: 0.2
+			}, "f3_out").to('#o', 0.1, {opacity: 1}).to('#lockup_o', 1, {
+				scale: 0.09,
+				x: 77,
+				ease: Power2.easeOut
+			}).from('#justadd', 1, {
+				x: 40,
+				opacity: 0,
+				ease: Power2.easeOut,
+				delay: -0.9
+			}, "lockup").to('#c', 1, {
+				x: -131,
+				opacity: 1,
+				ease: Power2.easeOut,
+				delay: -0.9
+			}, "lockup").to('#u', 1, {
+				x: -103,
+				opacity: 1,
+				ease: Power2.easeOut,
+				delay: -0.8
+			}, "lockup").to('#r', 1, {
+				x: -74,
+				opacity: 1,
+				ease: Power2.easeOut,
+				delay: -0.7
+			}, "lockup").to('#i', 1, {
+				x: -44,
+				opacity: 1,
+				ease: Power2.easeOut,
+				delay: -0.6
+			}, "lockup").to('#s', 1, {
+				x: 63,
+				opacity: 1,
+				ease: Power2.easeOut,
+				delay: -0.6
+			}, "lockup").to('#i2', 1, {
+				x: 91,
+				opacity: 1,
+				ease: Power2.easeOut,
+				delay: -0.7
+			}, "lockup").to('#t', 1, {
+				x: 104,
+				opacity: 1,
+				ease: Power2.easeOut,
+				delay: -0.8
+			}, "lockup").to('#y', 1, {
+				x: 131,
+				opacity: 1,
+				ease: Power2.easeOut,
+				delay: -0.9
+			}, "lockup").to('#black-fade', 2, {
+				opacity: 1,
+				ease: Power2.easeOut,
+				delay: 0.5
+			}).to('.lockup', 0.1, {
+				opacity: 0,
+				delay: -0.55
+			}).to('#black-fade', 0.1, {
+				opacity: 0,
+				ease: Power2.easeOut,
+				delay: -0.5
+			})
+
+			//  Frame 03
+				.to('#logo-SLV', 2, {
+				opacity: 1,
+				ease: Power2.easeOut,
+				delay: -0.5
+			}, "endframe").from('#logo-CV', 2, {
+				opacity: 0,
+				ease: Power2.easeOut,
+				delay: -0.5
+			}, "endframe").from('#text-4', 2, {
+				opacity: 0,
+				ease: Power2.easeOut,
+				delay: -0.5
+			}, "endframe").to('#text-4', 1, {
+				opacity: 0,
+				ease: Power2.easeOut,
+				delay: 0.5
+			}).from('button', 2.5, {
+				scale: 0,
+				ease: Elastic.easeOut.config(1, 0.3),
+				delay: -0.5
+			}, "endframe2")
+
+		}());
+	</script>
+</body>
+</html>

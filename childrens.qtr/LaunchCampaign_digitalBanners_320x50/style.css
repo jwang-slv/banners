@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+}
+
+#container {
+  position: absolute;
+  width: 320px;
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid white;
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+#logo-SLV {
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  width: 128px;
+  opacity: 1;
+}
+
+#logo-CV {
+  position: absolute;
+  top: 15px;
+  left: 200px;
+  width: 75px;
+  opacity: 1;
+}
+
+#text-1, #text-2, #text-3 {
+  position: absolute;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  height: 38px;
+  top: 9px
+}
+
+#text-1 {
+  background-image: url('assets/text-1.png');
+  width: 108px;
+  left: 180px;
+  top:18px;
+}
+
+#text-2 {
+  background-image: url('assets/text-2.png');
+  width: 136px;
+  left: 166px;
+  top:18px;
+}
+
+#text-3 {
+  background-image: url('assets/text-3.png');
+  width: 145px;
+  left: 160px;
+  top:18px;
+}
+
+#text-4 {
+  position: absolute;
+  background-image: url('assets/text-4.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  width: 232px;
+  height: 38px;
+  left: 44px;
+  top: 9px
+}
+
+.lockup {
+  opacity: 1;
+}
+
+#c, #u, #r, #i, #o, #s, #i2, #t, #y {
+  position: absolute;
+  left: 180px;
+  top: 7px;
+  opacity: 0;
+}
+
+#justadd {
+  position: absolute;
+  left: 14px;
+  top: 18px;
+}
+
+#lockup_o {
+  position: relative;
+  width: 449px;
+  height: 448px;
+  left: -67px;
+  top: -200px;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 1;
+}
+
+#image {
+  position: absolute;
+  background-image: url('assets/image.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 350px;
+  height: 340px;
+  left: 48px;
+  top: 64px;
+}
+
+#o {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 449px;
+  opacity: 0;
+}
+
+#black-fade {
+  position: absolute;
+  width: 728px;
+  height: 90px;
+  left: 0;
+  top: 0;
+  background-color: black;
+  opacity: 0;
+}
+
+#text-04 {
+  position: absolute;
+  background-image: url('assets/text-04.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 181px;
+  height: 38px;
+  left: 128px;
+  top: 19px;
+  opacity: 1;
+}
+
+button {
+  position: absolute;
+  height: 30px;
+  width: 127px;
+  left: 183px;
+  top: 8px;
+  background-color: black;
+  border: 2px solid: white;
+  border-radius: 6px;
+  padding-top: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#trace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
